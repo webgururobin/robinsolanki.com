@@ -8,8 +8,17 @@ import Layout from "../components/layout"
 export default () => (
   <div>
     <Layout>
-      <div className="main">
-        <h1>Robin Solanki.</h1>
+      <div className="container">
+        <div className="main">
+          <h1>
+            Robin
+            <br /> Solanki.
+          </h1>
+          <p>
+            Contact:{" "}
+            <a href="mailto:hello@robinsolanki.com">hello[@]robinsolanki.com</a>
+          </p>
+        </div>
       </div>
     </Layout>
   </div>
