@@ -24,7 +24,6 @@ const GlobalStyle = createGlobalStyle`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 400px;
     min-height: 100vh;
   }
 
