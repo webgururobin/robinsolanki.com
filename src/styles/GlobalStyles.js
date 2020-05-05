@@ -17,18 +17,15 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .container {
-    /* max-width: 800px; */
-    margin: 0 auto;
-    position: relative;
-    height: 100vh
   }
 
   .main {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    min-height: 100vh;
   }
 
   h1 {
