@@ -6,5 +6,13 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: "Robin Solanki",
+    titleTemplate: "%s | Full Stack Web Developer | Mumbai India",
+    description: `Robin Solanki is a Full Stack Web Developer with expertise in Javascript and libraries such as React.js`,
+    url: "http://www.robinsolanki.com",
+    image: "/images/robinsolanki.jpg",
+    twitterUsername: "@robinsolanki",
+  },
   plugins: [`gatsby-plugin-styled-components`],
 }
