@@ -14,5 +14,13 @@ module.exports = {
     image: "/images/robinsolanki.jpg",
     twitterUsername: "@robinsolanki",
   },
-  plugins: [`gatsby-plugin-styled-components`],
+  plugins: [
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-72351877-1",
+      },
+    },
+  ],
 }
