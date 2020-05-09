@@ -11,6 +11,7 @@ module.exports = {
     titleTemplate: "%s | Full Stack Web Developer | Mumbai India",
     description: `Robin Solanki is a Full Stack Web Developer with expertise in Javascript and libraries such as React.js`,
     url: "http://www.robinsolanki.com",
+    siteUrl: "http://www.robinsolanki.com",
     image: "/images/robinsolanki.jpg",
     twitterUsername: "@robinsolanki",
   },
@@ -21,6 +22,10 @@ module.exports = {
       options: {
         trackingId: "UA-72351877-1",
         head: true,
+      },
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        output: `/sitemap.xml`,
       },
     },
   ],
