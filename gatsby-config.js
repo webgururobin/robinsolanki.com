@@ -23,6 +23,8 @@ module.exports = {
         trackingId: "UA-72351877-1",
         head: false,
       },
+    },
+    {
       resolve: `gatsby-plugin-sitemap`,
       options: {
         output: `/sitemap.xml`,
