@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components"
-import LemonMilk from "../fonts/lemonMilk.woff"
+import LemonMilk from "../fonts/LemonMilk.woff"
 import Poppins from "../fonts/Poppins.woff"
 
 export const colors = {
