@@ -5,12 +5,14 @@ import Poppins from "../fonts/Poppins.woff"
 export const colors = {
   lightColor: "#F8F8F8",
   darkColor: "#131313",
+  accentColor: "#F20505",
 }
 
 export const darkTheme = {
   colors: {
     background: colors.darkColor,
     text: colors.lightColor,
+    accent: colors.accentColor,
   },
 }
 
@@ -18,6 +20,7 @@ export const lightTheme = {
   colors: {
     background: colors.lightColor,
     text: colors.darkColor,
+    accent: colors.accentColor,
   },
 }
 
@@ -114,7 +117,7 @@ export const GlobalStyle = createGlobalStyle`
 
   a {
     border-bottom: 1px solid ${props => props.theme.colors.text};
-    color: ${props => props.theme.colors.text};
+    color: ${props => props.theme.colors.accent};
     transition: all ease .2s;
     text-decoration: none;
 
