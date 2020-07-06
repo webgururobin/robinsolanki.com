@@ -28,6 +28,10 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  html {
+    font-size: 10px;
+  }
+
   @font-face {
     font-family: 'LemonMilk';
     src:  url(${LemonMilk}) format('woff');
@@ -49,7 +53,6 @@ export const GlobalStyle = createGlobalStyle`
     color: ${props => props.theme.colors.text};
     margin: 0;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
-    font-size: 10px;
   }
 
    h1, h2, h3, h4, h5, h6 {
