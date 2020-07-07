@@ -9,6 +9,6 @@ menu:
     name: "About"
     link: "/about"
   - id: "menu-item-3"
-    name: "Contact"
-    link: "/contact"
+    name: "Portfolio"
+    link: "/portfolio"
 ---

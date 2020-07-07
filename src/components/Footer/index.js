@@ -1,21 +1,51 @@
 import React from "react"
+import { Link } from "gatsby"
 
 //Hooks
 import { useMetaDataQuery } from "../../hooks/useMetaDataQuery"
 
 // Styles
-import { Wrapper } from "./Footer.styles"
+import { ClientWrapper, Copyright, CTA } from "./Footer.styles"
 
 const Footer = () => {
   const data = useMetaDataQuery()
   return (
-    <Wrapper>
-      <p>
-        {" "}
-        &copy; {new Date().getFullYear()} <a href={data.url}>{data.title}</a>
-      </p>
-      <p>Made with &hearts; from Mumbai, India.</p>
-    </Wrapper>
+    <>
+      <ClientWrapper>
+        <div>
+          <h3>
+            50+ <br />
+            Clients
+          </h3>
+        </div>
+        <div>
+          <h3>
+            250+ <br />
+            Projects
+          </h3>
+        </div>
+        <div>
+          <h3>
+            10+ <br />
+            Nations
+          </h3>
+        </div>
+      </ClientWrapper>
+      <CTA>
+        <h2>Want to collaborate?</h2>
+        <a className="button" href="mailto:hello@robinsolanki.com">
+          Get in touch
+        </a>
+      </CTA>
+
+      <Copyright>
+        <p>
+          {" "}
+          &copy; {new Date().getFullYear()} <a href={data.url}>{data.title}</a>
+        </p>
+        <p>Made with &hearts; in Mumbai, India.</p>
+      </Copyright>
+    </>
   )
 }
 

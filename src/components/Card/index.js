@@ -15,7 +15,7 @@ const Card = ({ data, type }) => {
         <ul>
           {data.portfolioCategory.map(cat => (
             <li key={cat.slug}>
-              <Link to={`/${cat.slug}`}>{cat.title}</Link>
+              <Link to={`/portfolio-category/${cat.slug}`}>{cat.title}</Link>
             </li>
           ))}
         </ul>

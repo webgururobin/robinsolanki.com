@@ -17,10 +17,9 @@ export const CardContainer = styled.div`
 
 export const CardSingle = styled.div`
   position: relative;
-
-  width: 45%;
-  margin: 2rem;
+  margin: 2rem 0;
   margin-bottom: 4rem;
+  width: 48%;
 
   @media (max-width: 768px) {
     width: 100%;

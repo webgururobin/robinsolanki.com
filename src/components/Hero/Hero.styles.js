@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const Wrapper = styled.div`
-  min-height: 500px;
+  min-height: 40rem;
   display: flex;
   justify-content: center;
   align-items: center;

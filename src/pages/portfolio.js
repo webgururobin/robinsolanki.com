@@ -15,7 +15,6 @@ export const query = graphql`
     allContentfulPortfolio(
       filter: { node_locale: { eq: "en-US" } }
       sort: { fields: createdAt, order: DESC }
-      limit: 3
     ) {
       edges {
         node {
@@ -37,11 +36,11 @@ export const query = graphql`
   }
 `
 
-const IndexPage = ({ data }) => {
+const PortfolioPage = ({ data }) => {
   return (
     <Layout>
-      <SEO title="Full Stack Website Developer" />
-      <Hero title="Full Stack Website Developer" />
+      <SEO title="Portfolio" />
+      <Hero title="Portfolio" />
       <main>
         <CardContainer>
           {data.allContentfulPortfolio.edges.map(edge => (
@@ -53,4 +52,4 @@ const IndexPage = ({ data }) => {
   )
 }
 
-export default IndexPage
+export default PortfolioPage

@@ -4,6 +4,7 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
   max-width: var(--site-max-width);
   height: 5rem;
   margin: 1rem auto;
@@ -33,4 +34,13 @@ export const Logo = styled.div`
 export const RightWrapper = styled.div`
   display: flex;
   justify-content: space-between;
+`
+
+export const StickyWrapper = styled.div`
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: ${props => props.theme.colors.background};
 `

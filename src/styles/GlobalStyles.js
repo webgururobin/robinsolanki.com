@@ -64,8 +64,12 @@ export const GlobalStyle = createGlobalStyle`
 
   main {
     max-width: var(--site-max-width);
-    margin: 40px auto;
+    margin: 2rem auto;
     padding: auto 1rem;
+  }
+
+  .content {
+    margin: 0 2rem;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -73,6 +77,7 @@ export const GlobalStyle = createGlobalStyle`
     font-family: "LemonMilk", Arial, Helvetica, sans-serif;
     transition: all 0.5s ease;
     letter-spacing: 1px;
+    margin-bottom: 1rem;
   }
 
   h1 {
@@ -103,6 +108,30 @@ export const GlobalStyle = createGlobalStyle`
       font-size: 1.6rem;
       line-height: 2.4rem;
     }
+  }
+
+  a {
+    color: ${props => props.theme.colors.accent};
+  }
+
+  .button {
+    padding: 1rem 3rem;
+    margin: 1rem 0;
+    background: ${props => props.theme.colors.accent};
+    color: ${props => props.theme.colors.background};
+    text-decoration: none; 
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+    transition: all 0.5s ease;
+
+    :hover {
+       transform: scale(2)
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+    }   
   }
 
   strong {
