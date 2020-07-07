@@ -4,11 +4,16 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: "Robin Solanki",
     titleTemplate: "%s | Full Stack Web Developer | Mumbai India",
+    author: "@robinsolanki",
     description: `Robin Solanki is a Full Stack Web Developer with expertise in Javascript and libraries such as React.js`,
     url: "https://www.robinsolanki.com",
     siteUrl: "https://www.robinsolanki.com",

@@ -5,7 +5,7 @@ import Poppins from "../fonts/Poppins.woff"
 export const colors = {
   lightColor: "#F8F8F8",
   darkColor: "#131313",
-  accentColor: "#F20505",
+  accentColor: "#b02004",
 }
 
 export const darkTheme = {
@@ -24,15 +24,10 @@ export const lightTheme = {
   },
 }
 
+// Global Styles
 export const GlobalStyle = createGlobalStyle`
-  * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-
-  html {
-    font-size: 10px;
+  :root {
+    --site-max-width: 1366px;
   }
 
   @font-face {
@@ -47,31 +42,36 @@ export const GlobalStyle = createGlobalStyle`
     font-style: normal;
   }
 
-  :root {
-    --site-max-width: 1366px;
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
   }
 
-   body {
+  html {
+    font-size: 10px;
+  }
+
+  body {
     background: ${props => props.theme.colors.background};
     color: ${props => props.theme.colors.text};
     margin: 0;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    /* transition: all 5s ease; */
   }
 
-   h1, h2, h3, h4, h5, h6 {
+  main {
+    max-width: var(--site-max-width);
+    margin: 40px auto;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
     color: ${props => props.theme.colors.text};
     font-family: "LemonMilk", Arial, Helvetica, sans-serif;
     transition: all 0.5s ease;
     letter-spacing: 1px;
-  }
-
-  .main {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
   }
 
   h1 {
