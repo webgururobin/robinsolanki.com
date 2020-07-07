@@ -114,15 +114,4 @@ export const GlobalStyle = createGlobalStyle`
       line-height: 2.4rem;
     }
   }
-
-  a {
-    border-bottom: 1px solid ${props => props.theme.colors.text};
-    color: ${props => props.theme.colors.accent};
-    transition: all ease .2s;
-    text-decoration: none;
-
-    &:hover {
-      border-bottom: none;
-    }
-  }
 `

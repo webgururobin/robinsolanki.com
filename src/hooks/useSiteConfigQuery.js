@@ -5,6 +5,7 @@ export const useSiteConfigQuery = () => {
     query ConfigQuery {
       markdownRemark(frontmatter: { type: { eq: "config" } }) {
         frontmatter {
+          title
           menu {
             id
             link

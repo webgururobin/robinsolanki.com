@@ -3,6 +3,7 @@ import { ThemeProvider } from "styled-components"
 
 // Components
 import SEO from "../SEO"
+import Header from "../Header"
 
 // Styles
 import { GlobalStyle, lightTheme, darkTheme } from "../../styles/GlobalStyles"
@@ -15,12 +16,11 @@ const darkMode = true
 
 const Layout = ({ children }) => {
   const data = useMetaDataQuery()
-
-  console.log(data)
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <GlobalStyle />
       <SEO />
+      <Header siteTitle={data.title} />
       {children}
     </ThemeProvider>
   )
