@@ -4,6 +4,8 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
+const path = require("path")
+
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
@@ -22,6 +24,23 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/src/content`,
+      },
+    },
+    `gatsby-transformer-remark`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-gtag`,
       options: {
