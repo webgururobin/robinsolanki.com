@@ -2,24 +2,25 @@ import React from "react"
 
 // Components
 import Layout from "../components/Layout"
+import SEO from "../components/SEO"
+import Hero from "../components/Hero"
+import Card from "../components/Card"
 
 // styles
 
-export default () => (
-  <div>
+const IndexPage = () => {
+  return (
     <Layout>
-      <div className="container">
-        <div className="main">
-          <h1>
-            Robin
-            <br /> Solanki.
-          </h1>
-          <p>
-            Contact:{" "}
-            <a href="mailto:hello@robinsolanki.com">hello[@]robinsolanki.com</a>
-          </p>
-        </div>
-      </div>
+      <SEO title="Full Stack Website Developer" />
+      <Hero
+        title="Full Stack Website Developer"
+        categories={["test", "test1"]}
+      />
+      <main>
+        <Card />
+      </main>
     </Layout>
-  </div>
-)
+  )
+}
+
+export default IndexPage

@@ -27,7 +27,7 @@ export const lightTheme = {
 // Global Styles
 export const GlobalStyle = createGlobalStyle`
   :root {
-    --site-max-width: 1366px;
+    --site-max-width: 1200px;
   }
 
   @font-face {
@@ -65,6 +65,7 @@ export const GlobalStyle = createGlobalStyle`
   main {
     max-width: var(--site-max-width);
     margin: 40px auto;
+    padding: auto 1rem;
   }
 
   h1, h2, h3, h4, h5, h6 {

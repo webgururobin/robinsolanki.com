@@ -18,7 +18,7 @@ export const Nav = styled.ul`
     cursor: pointer;
 
     .active {
-      border-bottom: 1px solid ${props => props.theme.colors.accent};
+      border-bottom: 2px solid ${props => props.theme.colors.accent};
     }
 
     :last-child {

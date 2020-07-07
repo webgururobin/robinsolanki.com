@@ -43,7 +43,7 @@ export const Nav = styled.ul`
     margin: 1rem 0;
 
     .active {
-      border-bottom: 1px solid ${props => props.theme.colors.accent};
+      border-bottom: 2px solid ${props => props.theme.colors.accent};
     }
 
     :hover {

@@ -4,9 +4,10 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1366px;
+  max-width: var(--site-max-width);
   height: 5rem;
-  margin: 2rem;
+  margin: 1rem auto;
+  padding: 1rem;
 
   .logo {
     color: ${props => props.theme.colors.text};

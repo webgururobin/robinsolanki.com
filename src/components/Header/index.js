@@ -25,7 +25,7 @@ const Header = () => {
         </Logo>
       </Link>
       <RightWrapper>
-        <div>Mode Button</div>
+        {/* <div>Mode Button</div> */}
         <Menu items={siteConfig.menu} />
         <Hamburger menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <MobileMenu menuOpen={menuOpen} items={siteConfig.menu} />

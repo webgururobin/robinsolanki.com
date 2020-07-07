@@ -14,17 +14,18 @@ export const HamburgerIcon = styled.div`
     display: block;
     height: 2px;
     transition: all 0.2 ease-in-out;
+    margin-bottom: 1rem;
   }
 
   :before {
-    margin-bottom: 1.5rem;
+    margin-top: 1rem;
     transform: ${props =>
       props.menuOpen ? "translateY(9px) rotate(45deg)" : ""};
   }
 
   :after {
     transform: ${props =>
-      props.menuOpen ? "translateY(-9px) rotate(-45deg)" : ""};
+      props.menuOpen ? "translateY(-3px) rotate(-45deg)" : ""};
   }
 
   @media screen and (max-width: 768px) {
