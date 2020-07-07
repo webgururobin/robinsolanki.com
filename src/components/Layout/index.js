@@ -4,6 +4,7 @@ import { ThemeProvider } from "styled-components"
 // Components
 import SEO from "../SEO"
 import Header from "../Header"
+import Footer from "../Footer"
 
 // Styles
 import { GlobalStyle, lightTheme, darkTheme } from "../../styles/GlobalStyles"
@@ -12,7 +13,7 @@ import { GlobalStyle, lightTheme, darkTheme } from "../../styles/GlobalStyles"
 import { useMetaDataQuery } from "../../hooks/useMetaDataQuery"
 
 // TTD Remove darkMode
-const darkMode = true
+const darkMode = false
 
 const Layout = ({ children }) => {
   const data = useMetaDataQuery()
@@ -22,6 +23,7 @@ const Layout = ({ children }) => {
       <SEO />
       <Header siteTitle={data.title} />
       {children}
+      <Footer />
     </ThemeProvider>
   )
 }

@@ -7,7 +7,7 @@ const Hero = ({ title, categories }) => {
   return (
     <Wrapper>
       <h1>{title}</h1>
-      <ul>{categories && categories.map(cat => <li>{cat}</li>)}</ul>
+      <ul>{categories && categories.map(cat => <li key={cat}>{cat}</li>)}</ul>
     </Wrapper>
   )
 }

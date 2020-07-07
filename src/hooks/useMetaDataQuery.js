@@ -7,6 +7,7 @@ export const useMetaDataQuery = () => {
         siteMetadata {
           title
           author
+          url
           description
         }
       }

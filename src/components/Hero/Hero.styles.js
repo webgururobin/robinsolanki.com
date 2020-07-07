@@ -12,30 +12,4 @@ export const Wrapper = styled.div`
   @media screen and (max-width: 768px) {
     text-align: center;
   }
-
-  ul {
-    list-style-type: none;
-    align-self: flex-start;
-
-    @media screen and (max-width: 768px) {
-      align-self: center;
-    }
-  }
-
-  li {
-    display: inline-block;
-    margin-right: 0.5rem;
-
-    :after {
-      content: ",";
-    }
-
-    :last-child {
-      margin-right: 0;
-    }
-
-    :last-child:after {
-      content: "";
-    }
-  }
 `
