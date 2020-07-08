@@ -60,6 +60,9 @@ export const GlobalStyle = createGlobalStyle`
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     font-size: 1.6rem;
     /* transition: all 5s ease; */
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   main {

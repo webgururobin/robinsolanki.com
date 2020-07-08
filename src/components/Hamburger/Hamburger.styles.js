@@ -30,5 +30,6 @@ export const HamburgerIcon = styled.div`
 
   @media screen and (max-width: 768px) {
     display: block;
+    margin-top: 1rem;
   }
 `
