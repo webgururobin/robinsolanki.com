@@ -40,8 +40,8 @@ export const query = graphql`
 const IndexPage = ({ data }) => {
   return (
     <Layout>
-      <SEO title="Full Stack Website Developer" />
-      <Hero title="Full Stack Website Developer" />
+      <SEO title="Full Stack Web Developer" />
+      <Hero title="Full Stack Web Developer" />
       <main>
         <CardContainer>
           {data.allContentfulPortfolio.edges.map(edge => (
