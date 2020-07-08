@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 
 // Components
 import Layout from "../components/Layout"
-import SEO from "../components/Seo"
+import Seo from "../components/Seo"
 import Hero from "../components/Hero"
 import Card from "../components/Card"
 
@@ -39,7 +39,7 @@ export const query = graphql`
 const PortfolioPage = ({ data }) => {
   return (
     <Layout>
-      <SEO title="Portfolio" />
+      <Seo title="Portfolio" />
       <Hero title="Portfolio" />
       <main>
         <CardContainer>

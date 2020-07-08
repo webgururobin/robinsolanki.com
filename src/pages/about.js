@@ -2,13 +2,13 @@ import React from "react"
 
 // Components
 import Layout from "../components/Layout"
-import SEO from "../components/Seo"
+import Seo from "../components/Seo"
 import Hero from "../components/Hero"
 
 const AboutPage = () => {
   return (
     <Layout>
-      <SEO title="About" />
+      <Seo title="About" />
       <Hero title="About" />
       <main>
         <div className="content">

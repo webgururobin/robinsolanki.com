@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 
 // Components
 import Layout from "../components/Layout"
-import SEO from "../components/Seo"
+import Seo from "../components/Seo"
 import Hero from "../components/Hero"
 import Card from "../components/Card"
 
@@ -45,7 +45,7 @@ const PortfolioCategoryTemplate = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title={category.title} />
+      <Seo title={category.title} />
       <Hero title={category.title} />
       <main>
         <CardContainer>

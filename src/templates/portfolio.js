@@ -3,7 +3,7 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 
 import Layout from "../components/Layout"
-import SEO from "../components/Seo"
+import Seo from "../components/Seo"
 import Hero from "../components/Hero"
 
 import Star from "../images/star.svg"
@@ -33,7 +33,7 @@ const portfolioTemplate = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title={data.contentfulPortfolio.title} />
+      <Seo title={data.contentfulPortfolio.title} />
       <Hero title={data.contentfulPortfolio.title} />
       <main>
         <PortfolioWrapper>

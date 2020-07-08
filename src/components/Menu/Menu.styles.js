@@ -5,6 +5,9 @@ export const Nav = styled.ul`
   padding: 0;
   font-family: "Poppins", Arial, sans-serif;
   font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   a {
     text-decoration: none;

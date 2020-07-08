@@ -7,7 +7,7 @@ import favicon from "../../images/favicon.ico"
 // import { useLocation } from "@reach/router"
 import { useStaticQuery, graphql } from "gatsby"
 
-const SEO = ({ title, description, image, article }) => {
+const Seo = ({ title, description, image, article }) => {
   // const { location } = useLocation()
   const { site } = useStaticQuery(query)
 
@@ -20,28 +20,28 @@ const SEO = ({ title, description, image, article }) => {
     twitterUsername,
   } = site.siteMetadata
 
-  const seo = {
+  const Seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
     image: `${siteUrl}${image || defaultImage}`,
   }
 
   return (
-    <Helmet title={seo.title} titleTemplate={titleTemplate}>
-      <meta name="description" content={seo.description} />
-      <meta name="image" content={seo.image} />
+    <Helmet title={Seo.title} titleTemplate={titleTemplate}>
+      <meta name="description" content={Seo.description} />
+      <meta name="image" content={Seo.image} />
       <link rel="icon" href={favicon} />
 
-      {seo.url && <meta property="og:url" content={seo.url} />}
+      {Seo.url && <meta property="og:url" content={Seo.url} />}
       {(article ? true : null) && <meta property="og:type" content="article" />}
 
-      {seo.title && <meta property="og:title" content={seo.title} />}
+      {Seo.title && <meta property="og:title" content={Seo.title} />}
 
-      {seo.description && (
-        <meta property="og:description" content={seo.description} />
+      {Seo.description && (
+        <meta property="og:description" content={Seo.description} />
       )}
 
-      {seo.image && <meta property="og:image" content={seo.image} />}
+      {Seo.image && <meta property="og:image" content={Seo.image} />}
 
       <meta name="twitter:card" content="summary_large_image" />
 
@@ -49,19 +49,19 @@ const SEO = ({ title, description, image, article }) => {
         <meta name="twitter:creator" content={twitterUsername} />
       )}
 
-      {seo.title && <meta name="twitter:title" content={seo.title} />}
+      {Seo.title && <meta name="twitter:title" content={Seo.title} />}
 
-      {seo.description && (
-        <meta name="twitter:description" content={seo.description} />
+      {Seo.description && (
+        <meta name="twitter:description" content={Seo.description} />
       )}
 
-      {seo.image && <meta name="twitter:image" content={seo.image} />}
+      {Seo.image && <meta name="twitter:image" content={Seo.image} />}
     </Helmet>
   )
 }
 
 const query = graphql`
-  query SEO {
+  query Seo {
     site {
       siteMetadata {
         defaultTitle: title
@@ -75,16 +75,16 @@ const query = graphql`
   }
 `
 
-export default SEO
+export default Seo
 
-SEO.propTypes = {
+Seo.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
   image: PropTypes.string,
   article: PropTypes.bool,
 }
 
-SEO.defaultProps = {
+Seo.defaultProps = {
   title: null,
   description: null,
   image: null,

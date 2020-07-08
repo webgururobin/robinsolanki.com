@@ -2,7 +2,7 @@ import React, { useContext } from "react"
 import { ThemeProvider } from "styled-components"
 
 // Components
-import SEO from "../SEO"
+import Seo from "../Seo"
 import Header from "../Header"
 import Footer from "../Footer"
 
@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <GlobalStyle />
-      <SEO />
+      <Seo />
       <Header siteTitle={data.title} />
       {children}
       <Footer />
