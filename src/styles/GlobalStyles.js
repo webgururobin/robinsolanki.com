@@ -5,7 +5,7 @@ import Poppins from "../fonts/Poppins.woff"
 export const colors = {
   lightColor: "#F8F8F8",
   darkColor: "#131313",
-  accentColor: "#b02004",
+  accentColor: "#f06666",
 }
 
 export const darkTheme = {
@@ -135,8 +135,14 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 3.6rem;
     transition: all 0.5s ease;
 
+    width: 124px;
+    height: 38px;
+    border: none;
+    transition: all .3s ease 0s;
+    cursor: pointer;
+
     :hover {
-       transform: scale(2)
+      filter: brightness(90%);
     }
 
     @media screen and (max-width: 768px) {
