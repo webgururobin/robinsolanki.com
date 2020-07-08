@@ -5,6 +5,8 @@ export const HamburgerIcon = styled.div`
   width: 3rem;
   z-index: 1000;
   cursor: pointer;
+  align-self: center;
+  text-align: right;
 
   div,
   :after,
