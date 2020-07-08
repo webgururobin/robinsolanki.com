@@ -2,13 +2,13 @@ import React from "react"
 import { graphql } from "gatsby"
 
 // Components
-import Layout from "components/Layout"
-import SEO from "components/SEO"
-import Hero from "components/Hero"
-import Card from "components/Card"
+import Layout from "../components/Layout"
+import SEO from "../components/SEO"
+import Hero from "../components/Hero"
+import Card from "../components/Card"
 
 // styles
-import { CardContainer } from "components/Card/Card.styles"
+import { CardContainer } from "../components/Card/Card.styles"
 
 export const query = graphql`
   query PortfolioCategoryTemplate($id: String!) {
