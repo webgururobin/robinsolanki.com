@@ -66,10 +66,10 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 }
 
 // For Absolute Imports
-exports.onCreateWebpackConfig = ({ actions }) => {
-  actions.setWebpackConfig({
-    resolve: {
-      modules: [path.resolve(__dirname, "src"), "node_modules"],
-    },
-  })
-}
+// exports.onCreateWebpackConfig = ({ actions }) => {
+//   actions.setWebpackConfig({
+//     resolve: {
+//       modules: [path.resolve(__dirname, "src"), "node_modules"],
+//     },
+//   })
+// }
