@@ -3,33 +3,36 @@ import styled from "styled-components"
 export const HamburgerIcon = styled.div`
   display: none;
   width: 3rem;
-  z-index: 100;
+  z-index: 1000;
   cursor: pointer;
 
+  div,
   :after,
   :before {
-    background-color: ${props => props.theme.colors.text};
-    border-radius: 0px;
+    background: ${props => props.theme.colors.text};
     content: "";
     display: block;
     height: 2px;
-    transition: all 0.2 ease-in-out;
-    margin-bottom: 1rem;
+    margin: 7px 0;
+    transition: all 0.2s ease-in-out;
   }
 
   :before {
-    margin-top: 1rem;
     transform: ${props =>
       props.menuOpen ? "translateY(9px) rotate(45deg)" : ""};
   }
 
   :after {
     transform: ${props =>
-      props.menuOpen ? "translateY(-3px) rotate(-45deg)" : ""};
+      props.menuOpen ? "translateY(-9px) rotate(-45deg)" : ""};
+  }
+
+  div {
+    transform: ${props => (props.menuOpen ? "scale(0)" : "")};
   }
 
   @media screen and (max-width: 768px) {
     display: block;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
   }
 `

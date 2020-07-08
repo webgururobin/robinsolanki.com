@@ -72,10 +72,14 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .content {
-    p {
-       max-width: 960px;
-       margin: 0 auto;
-      padding: 0 2rem;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    img {
+      width: 100%;
+      display: block;
+      transform: scale(1.2);
+      margin-bottom: 8rem;
     }
   }
 

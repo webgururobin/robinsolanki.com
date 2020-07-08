@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   position: relative;
   max-width: var(--site-max-width);
-  height: 5rem;
+  height: 7rem;
   margin: 1rem auto;
   padding: 1rem;
 
@@ -19,7 +19,7 @@ export const Wrapper = styled.div`
   }
 
   @media (max-width: 768px) {
-    height: 5rem;
+    height: 7rem;
     margin-top: -3rem;
   }
 `

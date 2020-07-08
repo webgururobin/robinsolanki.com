@@ -8,8 +8,10 @@ const NotFoundPage = () => {
   return (
     <Layout>
       <Seo title="404 NOT FOUND" />
-      <h1>Not Found</h1>
-      <p>You just hit a route that doesn't exist ... the sadness.</p>
+      <div className="content">
+        <h1>Not Found</h1>
+        <p>You just hit a route that doesn't exist ... the sadness.</p>
+      </div>
     </Layout>
   )
 }
