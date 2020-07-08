@@ -6,10 +6,19 @@ import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 import Hero from "../components/Hero"
 
+import Star from "../images/star.svg"
+
 // Styles
 import { PortfolioWrapper, PortfolioDetails } from "./portfolio.styles"
 
 const portfolioTemplate = ({ data }) => {
+  let stars = []
+  for (let i = 0; i < data.contentfulPortfolio.reviewStars; ++i) {
+    stars.push(<img key={i} className="star" src={Star} />)
+  }
+
+  console.log("title", data.contentfulPortfolio.title)
+
   return (
     <Layout>
       <SEO title={data.contentfulPortfolio.title} />
@@ -38,7 +47,9 @@ const portfolioTemplate = ({ data }) => {
               </ul>
               <hr />
               <h3>Review</h3>
+              <div className="reviews">{stars}</div>
               {data.contentfulPortfolio.reviewText.reviewText}
+              <p className="reviewer">- {data.contentfulPortfolio.reviewBy}</p>
             </div>
           </PortfolioDetails>
         </PortfolioWrapper>
@@ -57,6 +68,8 @@ export const data = graphql`
       reviewText {
         reviewText
       }
+      reviewStars
+      reviewBy
       image {
         fluid(maxWidth: 1200, quality: 85) {
           src

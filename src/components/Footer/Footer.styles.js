@@ -22,7 +22,11 @@ export const ClientWrapper = styled.div`
   justify-content: center;
 
   div {
-    padding: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 30rem;
+    height: 30rem;
     margin: 2rem;
     background: ${props => props.theme.colors.text};
   }

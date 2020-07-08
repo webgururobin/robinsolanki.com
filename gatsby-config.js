@@ -59,5 +59,17 @@ module.exports = {
         output: `/sitemap.xml`,
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Robin Solanki`,
+        short_name: `robin-solanki`,
+        start_url: `/`,
+        background_color: `#b02004`,
+        theme_color: `#b02004`,
+        display: `minimal-ui`,
+        icon: `src/images/favicon.ico`, // This path is relative to the root of the site.
+      },
+    },
   ],
 }

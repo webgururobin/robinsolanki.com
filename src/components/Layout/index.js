@@ -13,7 +13,7 @@ import { GlobalStyle, lightTheme, darkTheme } from "../../styles/GlobalStyles"
 import { useMetaDataQuery } from "../../hooks/useMetaDataQuery"
 
 // TTD Remove darkMode
-const darkMode = false
+const darkMode = true
 
 const Layout = ({ children }) => {
   const data = useMetaDataQuery()

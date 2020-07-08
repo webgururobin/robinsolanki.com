@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 //Hooks
 import { useMetaDataQuery } from "../../hooks/useMetaDataQuery"

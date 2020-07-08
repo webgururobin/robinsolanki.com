@@ -13,6 +13,7 @@ export const PortfolioDetails = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 5rem auto;
+  padding: 0 2rem;
 
   hr {
     margin: 2rem 0;
@@ -37,8 +38,19 @@ export const PortfolioDetails = styled.div`
     font-size: 1.6rem;
   }
 
+  .reviews {
+    display: flex;
+
+    .star {
+      height: 2rem;
+      width: 2rem;
+      margin-bottom: 1rem;
+    }
+  }
+
   div:first-child {
     margin-right: 10rem;
+    margin-bottom: 5rem;
     @media (max-width: 768px) {
       margin-right: 0rem;
     }

@@ -8,6 +8,10 @@ export const CardContainer = styled.div`
   div:first-child {
     width: 100% !important;
 
+    width: 100%;
+    background: black;
+    /* padding: 2rem; */
+
     img {
       display: block;
       height: 70rem;
@@ -23,6 +27,10 @@ export const CardSingle = styled.div`
 
   @media (max-width: 768px) {
     width: 100%;
+
+    div {
+      padding: 1rem 0 0 2rem;
+    }
   }
 
   a {
@@ -45,9 +53,11 @@ export const CardSingle = styled.div`
 
   :first-child div {
     position: absolute;
-
-    bottom: 2rem;
-    left: 1rem;
+    bottom: 0rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 1rem;
+    /* left: 1rem; */
   }
 
   ul {
