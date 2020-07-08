@@ -69,7 +69,11 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .content {
-    margin: 0 2rem;
+    p {
+       max-width: 960px;
+       margin: 0 auto;
+      padding: 0 2rem;
+    }
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -133,6 +137,17 @@ export const GlobalStyle = createGlobalStyle`
       line-height: 2.4rem;
     }   
   }
+
+  img.center {
+    display: block;
+    margin: 5rem auto;
+  }
+
+  img.right {
+    float: right;
+    margin: 4rem 0 5rem 5rem;
+  }
+  
 
   strong {
     font-family: "LemonMilk", Arial, Helvetica, sans-serif;

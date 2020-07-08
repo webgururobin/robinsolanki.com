@@ -13,33 +13,28 @@ const AboutPage = ({ data }) => {
       <main>
         <div className="content">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quo
-            quisquam possimus! Laborum, quam! Illum vitae voluptatibus
-            perferendis sed delectus quo, nostrum facere soluta ab laudantium,
-            itaque suscipit dolores. Impedit? Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Aperiam quo quisquam possimus!
-            Laborum, quam! Illum vitae voluptatibus perferendis sed delectus
-            quo, nostrum facere soluta ab laudantium, itaque suscipit dolores.{" "}
-            <a href="#">Impedit</a>
+            A self-motivated and hardworking full-stack web developer with a
+            background in computer science.
           </p>
+
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-            autem, odit provident earum consequatur quam architecto libero ut
-            repudiandae natus ad optio, unde neque laborum voluptates velit
-            obcaecati quia odio.
+            I am fluent in all aspects of Rapid Prototyping and Development.
           </p>
-          <h2>Heading2</h2>
+
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-            autem, odit provident earum consequatur quam architecto libero ut
-            repudiandae natus ad optio, unde neque laborum voluptates velit
-            obcaecati quia odio.
+            Working with the best practices, keeping myself in sync with the
+            latest technologies, writing best quality, well-documented,
+            reusable, performant and readable code are some of my traits.
           </p>
+
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-            autem, odit provident earum consequatur quam architecto libero ut
-            repudiandae natus ad optio, unde neque laborum voluptates velit
-            obcaecati quia odio.
+            I also possess skills in configuring and deploying production-ready
+            web applications to VPS and a number of web host providers.
+          </p>
+
+          <p>
+            Besides all the above I have a deep passion for technology and love
+            to solve problems and learn new things.
           </p>
         </div>
       </main>

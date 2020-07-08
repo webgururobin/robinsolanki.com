@@ -12,39 +12,45 @@ import { CardContainer } from "../components/Card/Card.styles"
 
 export const query = graphql`
   query PortfolioCategoryTemplate($id: String!) {
-    contentfulPortfolioCategory(id: { eq: $id }) {
-      id
-      title
-      portfolio {
-        id
-        title
-        slug
-        portfolioCategory {
+    allContentfulPortfolio(
+      filter: { portfolioCategory: { elemMatch: { id: { eq: $id } } } }
+    ) {
+      edges {
+        node {
           id
           title
-          slug
-        }
-        image {
-          fluid(quality: 85, maxWidth: 1200) {
-            src
+          image {
+            fluid(quality: 85, maxWidth: 1200) {
+              src
+            }
+          }
+          portfolioCategory {
+            id
+            title
+            slug
           }
         }
       }
+    }
+    contentfulPortfolioCategory(id: { eq: $id }) {
+      title
     }
   }
 `
 
 const PortfolioCategoryTemplate = ({ data }) => {
+  console.log(data)
   const category = data.contentfulPortfolioCategory
-  const portfolios = data.contentfulPortfolioCategory.portfolio
+  const portfolios = data.allContentfulPortfolio
+
   return (
     <Layout>
       <SEO title={category.title} />
       <Hero title={category.title} />
       <main>
         <CardContainer>
-          {portfolios.map(item => (
-            <Card data={item} />
+          {portfolios.edges.map(edge => (
+            <Card key={edge.node.id} data={edge.node} type="portfolio" />
           ))}
         </CardContainer>
       </main>

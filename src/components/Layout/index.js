@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useContext } from "react"
 import { ThemeProvider } from "styled-components"
 
 // Components
@@ -9,14 +9,16 @@ import Footer from "../Footer"
 // Styles
 import { GlobalStyle, lightTheme, darkTheme } from "../../styles/GlobalStyles"
 
+// Context
+import { ModeContext } from "../../context/ModeProvider"
+
 // hooks
 import { useMetaDataQuery } from "../../hooks/useMetaDataQuery"
 
-// TTD Remove darkMode
-const darkMode = true
-
 const Layout = ({ children }) => {
   const data = useMetaDataQuery()
+  const [darkMode] = useContext(ModeContext)
+
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <GlobalStyle />

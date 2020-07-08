@@ -57,7 +57,16 @@ export const CardSingle = styled.div`
     width: 100%;
     background-color: rgba(0, 0, 0, 0.25);
     padding: 1rem;
-    /* left: 1rem; */
+
+    strong,
+    a,
+    li:after {
+      color: #f8f8f8;
+    }
+
+    *:hover {
+      border-bottom: none;
+    }
   }
 
   ul {

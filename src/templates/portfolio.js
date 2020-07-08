@@ -14,10 +14,22 @@ import { PortfolioWrapper, PortfolioDetails } from "./portfolio.styles"
 const portfolioTemplate = ({ data }) => {
   let stars = []
   for (let i = 0; i < data.contentfulPortfolio.reviewStars; ++i) {
-    stars.push(<img key={i} className="star" src={Star} />)
+    stars.push(<img alt="rating" key={i} className="star" src={Star} />)
   }
 
-  console.log("title", data.contentfulPortfolio.title)
+  const checkReviews = () => {
+    if (data.contentfulPortfolio.reviewStars) {
+      return (
+        <>
+          <hr />
+          <h3>Review</h3>
+          <div className="reviews">{stars}</div>
+          {data.contentfulPortfolio.reviewText.reviewText}
+          <p className="reviewer">- {data.contentfulPortfolio.reviewBy}</p>
+        </>
+      )
+    }
+  }
 
   return (
     <Layout>
@@ -46,10 +58,10 @@ const portfolioTemplate = ({ data }) => {
                 ))}
               </ul>
               <hr />
-              <h3>Review</h3>
-              <div className="reviews">{stars}</div>
-              {data.contentfulPortfolio.reviewText.reviewText}
-              <p className="reviewer">- {data.contentfulPortfolio.reviewBy}</p>
+              <h3>Country</h3>
+              <p>{data.contentfulPortfolio.country}</p>
+
+              {checkReviews()}
             </div>
           </PortfolioDetails>
         </PortfolioWrapper>
@@ -62,6 +74,7 @@ export const data = graphql`
     contentfulPortfolio(id: { eq: $id }) {
       title
       slug
+      country
       about {
         about
       }

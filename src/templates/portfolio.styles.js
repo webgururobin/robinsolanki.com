@@ -51,8 +51,17 @@ export const PortfolioDetails = styled.div`
   div:first-child {
     margin-right: 10rem;
     margin-bottom: 5rem;
+    width: 100%;
     @media (max-width: 768px) {
       margin-right: 0rem;
+    }
+  }
+
+  div:last-child {
+    width: 50rem;
+
+    @media (max-width: 768px) {
+      width: 100%;
     }
   }
 

@@ -19,7 +19,8 @@ export const Wrapper = styled.div`
   }
 
   @media (max-width: 768px) {
-    height: 3rem;
+    height: 5rem;
+    margin-top: -3rem;
   }
 `
 export const Logo = styled.div`
@@ -39,7 +40,7 @@ export const RightWrapper = styled.div`
 export const StickyWrapper = styled.div`
   position: -webkit-sticky; /* Safari */
   position: sticky;
-  top: 0;
+  top: -2px;
   width: 100%;
   z-index: 1000;
   background: ${props => props.theme.colors.background};

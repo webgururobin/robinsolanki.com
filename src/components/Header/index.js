@@ -1,10 +1,14 @@
-import React, { useState } from "react"
+import React, { useState, useContext } from "react"
 import { Link } from "gatsby"
 
 //Components
 import Menu from "../Menu"
 import Hamburger from "../Hamburger"
 import MobileMenu from "../MobileMenu"
+import ModeButton from "../ModeButton"
+
+// Context
+import { ModeContext } from "../../context/ModeProvider"
 
 // Hooks
 import { useSiteConfigQuery } from "../../hooks/useSiteConfigQuery"
@@ -14,6 +18,8 @@ import { Wrapper, StickyWrapper, RightWrapper, Logo } from "./Header.styles"
 
 const Header = () => {
   const siteConfig = useSiteConfigQuery()
+  const [darkMode, setDarkMode] = useContext(ModeContext)
+
   const [menuOpen, setMenuOpen] = useState(false)
   return (
     <StickyWrapper>
@@ -26,7 +32,7 @@ const Header = () => {
           </Logo>
         </Link>
         <RightWrapper>
-          {/* <div>Mode Button</div> */}
+          <ModeButton darkMode={darkMode} setDarkMode={setDarkMode} />
           <Menu items={siteConfig.menu} />
           <Hamburger menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
           <MobileMenu menuOpen={menuOpen} items={siteConfig.menu} />
