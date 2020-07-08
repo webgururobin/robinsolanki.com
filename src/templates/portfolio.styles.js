@@ -52,7 +52,7 @@ export const PortfolioDetails = styled.div`
     margin-right: 10rem;
     margin-bottom: 5rem;
     width: 100%;
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       margin-right: 0rem;
     }
   }
@@ -60,12 +60,12 @@ export const PortfolioDetails = styled.div`
   div:last-child {
     width: 50rem;
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       width: 100%;
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     flex-direction: column;
   }
 `

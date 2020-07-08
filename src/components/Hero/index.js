@@ -4,8 +4,6 @@ import React from "react"
 import { Wrapper } from "./Hero.styles"
 
 const Hero = ({ title, categories }) => {
-  console.log(categories)
-
   return (
     <Wrapper>
       <h1>{title}</h1>

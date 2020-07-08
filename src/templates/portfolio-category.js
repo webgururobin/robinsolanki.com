@@ -19,6 +19,7 @@ export const query = graphql`
         node {
           id
           title
+          slug
           image {
             fluid(quality: 85, maxWidth: 1200) {
               src
@@ -39,7 +40,6 @@ export const query = graphql`
 `
 
 const PortfolioCategoryTemplate = ({ data }) => {
-  console.log(data)
   const category = data.contentfulPortfolioCategory
   const portfolios = data.allContentfulPortfolio
 

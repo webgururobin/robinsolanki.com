@@ -18,7 +18,7 @@ export const Wrapper = styled.div`
     text-decoration: none;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     height: 7rem;
     margin-top: -3rem;
   }

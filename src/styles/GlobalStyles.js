@@ -95,7 +95,7 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 6.5rem;
     line-height: 8.5rem;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       font-size: 3.6rem;
       line-height: 5.5rem;
     }
@@ -105,7 +105,7 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 3.6rem;
     line-height: 5.5rem;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       font-size: 2.4rem;
       line-height: 3.6rem;
     }
@@ -115,7 +115,7 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 1.8rem;
     line-height: 3.6rem;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       font-size: 1.6rem;
       line-height: 2.4rem;
     }
@@ -145,7 +145,7 @@ export const GlobalStyle = createGlobalStyle`
       filter: brightness(90%);
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       font-size: 1.6rem;
       line-height: 2.4rem;
     }   
@@ -167,7 +167,7 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 1.8rem;
     line-height: 3.6rem;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       font-size: 1.6rem;
       line-height: 2.4rem;
     }

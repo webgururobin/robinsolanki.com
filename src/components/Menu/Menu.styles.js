@@ -33,7 +33,7 @@ export const Nav = styled.ul`
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     display: none;
   }
 `

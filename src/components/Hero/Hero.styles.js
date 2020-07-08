@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
   max-width: var(--site-max-width);
   margin: 0 auto;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     text-align: center;
   }
 `

@@ -25,7 +25,7 @@ export const CardSingle = styled.div`
   margin-bottom: 4rem;
   width: 48%;
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     width: 100%;
 
     div {
