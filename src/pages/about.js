@@ -5,7 +5,7 @@ import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 import Hero from "../components/Hero"
 
-const AboutPage = ({ data }) => {
+const AboutPage = () => {
   return (
     <Layout>
       <SEO title="About" />
