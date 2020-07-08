@@ -2,7 +2,7 @@ import React from "react"
 
 // Components
 import Layout from "../components/Layout"
-import SEO from "../components/SEO"
+import SEO from "../components/Seo"
 import Hero from "../components/Hero"
 
 const AboutPage = () => {
