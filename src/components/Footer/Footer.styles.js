@@ -4,6 +4,10 @@ export const Copyright = styled.div`
   text-align: center;
   margin-bottom: 2rem;
 
+  .heart {
+    color: ${props => props.theme.colors.accent};
+  }
+
   a {
     color: ${props => props.theme.colors.text};
     text-decoration: none;

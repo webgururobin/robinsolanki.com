@@ -42,7 +42,9 @@ const Footer = () => {
           {" "}
           &copy; {new Date().getFullYear()} <a href={data.url}>{data.title}</a>
         </p>
-        <p>Made with &hearts; in Mumbai, India.</p>
+        <p>
+          Made with <span className="heart">&#x2665;</span> in Mumbai, India.
+        </p>
       </Copyright>
     </>
   )
