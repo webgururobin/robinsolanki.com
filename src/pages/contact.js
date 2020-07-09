@@ -4,19 +4,18 @@ import React from "react"
 import Layout from "../components/Layout"
 import Seo from "../components/Seo"
 import Hero from "../components/Hero"
+import ContactForm from "../components/ContactForm"
 
-const NotFoundPage = () => {
+const ContactPage = () => {
   return (
     <Layout>
-      <Seo title="404 NOT FOUND" />
-      <Hero title="404 NOT FOUND" />
+      <Seo title="Contact" />
+      <Hero title="Contact" />
       <div className="content">
-        <p className="center">
-          You just hit a route that doesn't exist ... the sadness.
-        </p>
+        <ContactForm />
       </div>
     </Layout>
   )
 }
 
-export default NotFoundPage
+export default ContactPage

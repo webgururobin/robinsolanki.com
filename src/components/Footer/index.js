@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 //Hooks
 import { useMetaDataQuery } from "../../hooks/useMetaDataQuery"
@@ -32,9 +33,9 @@ const Footer = () => {
       </ClientWrapper>
       <CTA>
         <h2>Want to collaborate?</h2>
-        <a className="button" href="mailto:hello@robinsolanki.com">
+        <Link className="button" to="/contact">
           Get in touch
-        </a>
+        </Link>
       </CTA>
 
       <Copyright>

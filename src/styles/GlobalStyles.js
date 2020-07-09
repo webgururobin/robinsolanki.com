@@ -73,13 +73,17 @@ export const GlobalStyle = createGlobalStyle`
 
   .content {
     max-width: 960px;
-    margin: 0 auto;
+    margin: 0 auto 5rem auto;
     padding: 0 2rem;
     img {
       width: 100%;
       display: block;
       transform: scale(1.2);
       margin-bottom: 8rem;
+    }
+
+    .center {
+      text-align: center;
     }
   }
 
@@ -130,13 +134,15 @@ export const GlobalStyle = createGlobalStyle`
     margin: 1rem 0;
     background: ${props => props.theme.colors.accent};
     color: ${props => props.theme.colors.background};
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
     text-decoration: none; 
     font-size: 1.8rem;
-    line-height: 3.6rem;
+  
+
     transition: all 0.5s ease;
 
-    width: 124px;
-    height: 38px;
+    /* width: 124px;
+    height: 38px; */
     border: none;
     transition: all .3s ease 0s;
     cursor: pointer;

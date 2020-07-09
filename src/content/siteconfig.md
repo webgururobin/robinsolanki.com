@@ -11,4 +11,7 @@ menu:
   - id: "menu-item-3"
     name: "Portfolio"
     link: "/portfolio"
+  - id: "menu-item-4"
+    name: "Contact"
+    link: "/contact"
 ---
