@@ -36,6 +36,11 @@ export const CardSingle = styled.div`
     height: 50rem;
     object-fit: cover;
     object-position: top center;
+
+    @media screen and (max-width: 767px) {
+      object-fit: contain;
+      height: auto;
+    }
   }
 
   ul {

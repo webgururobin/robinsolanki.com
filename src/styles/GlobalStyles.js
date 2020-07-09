@@ -183,6 +183,10 @@ export const GlobalStyle = createGlobalStyle`
     width: 100%;
     img {
       height: 70rem;
+      @media screen and (max-width: 767px) {
+        object-fit: contain;
+        height: auto;
+      }
     }
 
     div {
