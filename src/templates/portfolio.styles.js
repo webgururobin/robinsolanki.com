@@ -6,6 +6,11 @@ export const PortfolioWrapper = styled.div`
     width: 100%;
     object-fit: cover;
     object-position: top center;
+
+    @media screen and (max-width: 767px) {
+      object-fit: contain;
+      height: auto;
+    }
   }
 `
 
