@@ -65,8 +65,8 @@ module.exports = {
         name: `Robin Solanki`,
         short_name: `robin-solanki`,
         start_url: `/`,
-        background_color: `#b02004`,
-        theme_color: `#b02004`,
+        background_color: `#f06666`,
+        theme_color: `#f06666`,
         display: `minimal-ui`,
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
