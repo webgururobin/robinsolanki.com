@@ -178,4 +178,29 @@ export const GlobalStyle = createGlobalStyle`
       line-height: 2.4rem;
     }
   }
+
+  .featured {
+    width: 100%;
+    img {
+      height: 70rem;
+    }
+
+    div {
+      position: absolute;
+      bottom: 0rem;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.25);
+      padding: 1rem;
+
+      strong,
+      a,
+      li:after {
+        color: #f8f8f8;
+      }
+
+      *:hover {
+        border-bottom: none;
+      }
+    }
+  }
 `

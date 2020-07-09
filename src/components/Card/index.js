@@ -3,9 +3,9 @@ import { Link } from "gatsby"
 // Styles
 import { CardSingle } from "./Card.styles"
 
-const Card = ({ data, type }) => {
+const Card = ({ data, type, featured }) => {
   return (
-    <CardSingle>
+    <CardSingle className={featured}>
       <img src={data.image.fluid.src} alt={data.title} />
       <div>
         <strong>{type}</strong>

@@ -4,19 +4,6 @@ export const CardContainer = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-
-  div:first-child {
-    width: 100% !important;
-
-    width: 100%;
-    background: black;
-    /* padding: 2rem; */
-
-    img {
-      display: block;
-      height: 70rem;
-    }
-  }
 `
 
 export const CardSingle = styled.div`
@@ -49,24 +36,6 @@ export const CardSingle = styled.div`
     height: 50rem;
     object-fit: cover;
     object-position: top center;
-  }
-
-  :first-child div {
-    position: absolute;
-    bottom: 0rem;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.25);
-    padding: 1rem;
-
-    strong,
-    a,
-    li:after {
-      color: #f8f8f8;
-    }
-
-    *:hover {
-      border-bottom: none;
-    }
   }
 
   ul {

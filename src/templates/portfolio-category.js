@@ -21,7 +21,7 @@ export const query = graphql`
           title
           slug
           image {
-            fluid(quality: 85, maxWidth: 1200) {
+            fluid(quality: 85, maxWidth: 600) {
               src
             }
           }

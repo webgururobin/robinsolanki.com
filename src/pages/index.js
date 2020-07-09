@@ -12,10 +12,10 @@ import { CardContainer } from "../components/Card/Card.styles"
 
 export const query = graphql`
   {
-    allContentfulPortfolio(
+    featured: allContentfulPortfolio(
       filter: { node_locale: { eq: "en-US" } }
       sort: { fields: createdAt, order: DESC }
-      limit: 3
+      limit: 1
     ) {
       edges {
         node {
@@ -34,17 +34,43 @@ export const query = graphql`
         }
       }
     }
+    all: allContentfulPortfolio(
+      filter: { node_locale: { eq: "en-US" } }
+      sort: { fields: createdAt, order: DESC }
+      limit: 2
+      skip: 1
+    ) {
+      edges {
+        node {
+          id
+          title
+          slug
+          image {
+            fluid(maxWidth: 600, quality: 85) {
+              src
+            }
+          }
+          portfolioCategory {
+            title
+            slug
+          }
+        }
+      }
+    }
   }
 `
 
 const IndexPage = ({ data }) => {
+  const featured = data.featured.edges[0].node
+  const all = data.all
   return (
     <Layout>
       <Seo title="Full Stack Web Developer" />
       <Hero title="Full Stack Web Developer" />
       <main>
+        <Card data={featured} type="portfolio" featured="featured" />
         <CardContainer>
-          {data.allContentfulPortfolio.edges.map(edge => (
+          {all.edges.map(edge => (
             <Card key={edge.node.id} data={edge.node} type="portfolio" />
           ))}
         </CardContainer>
