@@ -63,7 +63,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Robin Solanki`,
-        short_name: `robin-solanki`,
+        short_name: `Robin`,
         start_url: `/`,
         background_color: `#f06666`,
         theme_color: `#f06666`,
