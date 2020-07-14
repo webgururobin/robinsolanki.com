@@ -12,7 +12,7 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: "Robin Solanki",
-    titleTemplate: "%s | Full Stack Web Developer | Mumbai India",
+    titleTemplate: "%s | Robin Solanki",
     author: "@robinsolanki",
     description: `Robin Solanki is a Full Stack Web Developer with expertise in Javascript and libraries such as React.js`,
     url: "https://www.robinsolanki.com",
