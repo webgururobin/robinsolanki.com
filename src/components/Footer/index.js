@@ -40,6 +40,10 @@ const Footer = () => {
 
       <Copyright>
         <p>
+          <Link to="/terms">Terms</Link> |{" "}
+          <Link to="/privacy-policy">Privacy Policy</Link>
+        </p>
+        <p>
           {" "}
           &copy; {new Date().getFullYear()} <a href={data.url}>{data.title}</a>
         </p>
