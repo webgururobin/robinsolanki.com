@@ -115,14 +115,19 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
 
-  p {
+  p, li {
     font-size: 1.8rem;
     line-height: 3.6rem;
+    margin-bottom: 1rem;
 
     @media screen and (max-width: 767px) {
       font-size: 1.6rem;
       line-height: 2.4rem;
     }
+  }
+
+  ul, ol {
+    padding: 1rem;
   }
 
   a {
