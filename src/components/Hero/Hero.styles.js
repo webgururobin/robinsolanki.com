@@ -8,8 +8,5 @@ export const Wrapper = styled.div`
   flex-direction: column;
   max-width: var(--site-max-width);
   margin: 0 auto;
-
-  @media screen and (max-width: 767px) {
-    text-align: center;
-  }
+  text-align: center;
 `
