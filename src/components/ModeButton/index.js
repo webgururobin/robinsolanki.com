@@ -7,11 +7,11 @@ import NightIcon from "../../images/night-icon.svg"
 // Styles
 import { ImgButton } from "./ModeButton.styles"
 
-const ModeButton = ({ darkMode, setDarkMode }) => (
+const ModeButton = ({ state, dispatch }) => (
   <ImgButton
-    src={darkMode ? NightIcon : DayIcon}
+    src={state.isDark ? NightIcon : DayIcon}
     alt="mode"
-    onClick={() => setDarkMode(prev => !prev)}
+    onClick={() => dispatch({ type: "TOGGLE_DARK_MODE" })}
   />
 )
 

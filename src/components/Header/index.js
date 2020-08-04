@@ -8,7 +8,7 @@ import MobileMenu from "../MobileMenu"
 import ModeButton from "../ModeButton"
 
 // Context
-import { ModeContext } from "../../context/ModeProvider"
+import ModeContext from "../../context/ModeContext"
 
 // Hooks
 import { useSiteConfigQuery } from "../../hooks/useSiteConfigQuery"
@@ -18,7 +18,7 @@ import { Wrapper, StickyWrapper, RightWrapper, Logo } from "./Header.styles"
 
 const Header = () => {
   const siteConfig = useSiteConfigQuery()
-  const [darkMode, setDarkMode] = useContext(ModeContext)
+  const { state, dispatch } = useContext(ModeContext)
 
   const [menuOpen, setMenuOpen] = useState(false)
   return (
@@ -32,7 +32,7 @@ const Header = () => {
           </Logo>
         </Link>
         <RightWrapper>
-          <ModeButton darkMode={darkMode} setDarkMode={setDarkMode} />
+          <ModeButton state={state} dispatch={dispatch} />
           <Menu items={siteConfig.menu} />
           <Hamburger menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
           <MobileMenu menuOpen={menuOpen} items={siteConfig.menu} />

@@ -10,7 +10,7 @@ import Footer from "../Footer"
 import { GlobalStyle, lightTheme, darkTheme } from "../../styles/GlobalStyles"
 
 // Context
-import { ModeContext } from "../../context/ModeProvider"
+import ModeContext from "../../context/ModeContext"
 
 // hooks
 import { useMetaDataQuery } from "../../hooks/useMetaDataQuery"
@@ -18,14 +18,14 @@ import { motion } from "framer-motion"
 
 const Layout = ({ children }) => {
   const data = useMetaDataQuery()
-  const [darkMode] = useContext(ModeContext)
+  const { state } = useContext(ModeContext)
   const variants = {
     hidden: { opacity: 0 },
     visible: { opacity: 1 },
   }
 
   return (
-    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
+    <ThemeProvider theme={state.isDark ? darkTheme : lightTheme}>
       <GlobalStyle />
       <Seo />
       <Header siteTitle={data.title} />
