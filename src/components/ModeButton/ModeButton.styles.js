@@ -1,16 +1,15 @@
 import styled from "styled-components"
 
 export const ImgButton = styled.img`
-  width: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
   cursor: pointer;
   transition: all 0.3s ease;
   align-self: center;
-  padding: 5px;
+  border: none;
+  padding: 0;
   margin-right: 1rem;
-  margin-bottom: 1rem;
-  border: 1px dotted #f06666;
-  border-radius: 50%;
-  border: 1px solid ${props => props.theme.colors.accent};
+  margin-bottom: 0.5rem;
 
   :hover {
     transform: rotate(15deg);
@@ -18,5 +17,6 @@ export const ImgButton = styled.img`
 
   @media screen and (max-width: 767px) {
     padding-bottom: 0rem;
+    margin-top: 0.5rem;
   }
 `
