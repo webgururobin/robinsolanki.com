@@ -5,121 +5,233 @@ import Layout from "../components/Layout"
 import Seo from "../components/Seo"
 import Hero from "../components/Hero"
 
-const TermsPage = () => {
+const PrivacyPolicyPage = () => {
   return (
     <Layout>
-      <Seo title="Terms of Service" />
-      <Hero title="Terms of Service" />
+      <Seo title="Terms &amp; Privacy Policy" />
+      <Hero title="Terms &amp; Privacy Policy" />
       <main>
         <div className="content">
-          <h3>1. Terms</h3>
           <p>
-            By accessing the website at{" "}
-            <a href="https://robinsolanki.com">https://robinsolanki.com</a>, you
-            are agreeing to be bound by these terms of service, all applicable
-            laws and regulations, and agree that you are responsible for
-            compliance with any applicable local laws. If you do not agree with
-            any of these terms, you are prohibited from using or accessing this
-            site. The materials contained in this website are protected by
-            applicable copyright and trademark law.
+            At Robin Solanki, accessible from https://robinsolanki.com, one of
+            our main priorities is the privacy of our visitors. This Privacy
+            Policy document contains types of information that is collected and
+            recorded by Robin Solanki and how we use it.
           </p>
-          <h3>2. Use License</h3>
-          <ol type="a">
+
+          <p>
+            If you have additional questions or require more information about
+            our Privacy Policy, do not hesitate to contact us.
+          </p>
+
+          <h2>General Data Protection Regulation (GDPR)</h2>
+          <p>We are a Data Controller of your information.</p>
+          <p>
+            Robin Solanki legal basis for collecting and using the personal
+            information described in this Privacy Policy depends on the Personal
+            Information we collect and the specific context in which we collect
+            the information:
+          </p>
+          <ul>
+            <li>Robin Solanki needs to perform a contract with you</li>
+            <li>You have given Robin Solanki permission to do so</li>
             <li>
-              Permission is granted to temporarily download one copy of the
-              materials (information or software) on Robin Solanki's website for
-              personal, non-commercial transitory viewing only. This is the
-              grant of a license, not a transfer of title, and under this
-              license you may not:
-              <ol type="i">
-                <li>modify or copy the materials;</li>
-                <li>
-                  use the materials for any commercial purpose, or for any
-                  public display (commercial or non-commercial);
-                </li>
-                <li>
-                  attempt to decompile or reverse engineer any software
-                  contained on Robin Solanki's website;
-                </li>
-                <li>
-                  remove any copyright or other proprietary notations from the
-                  materials; or
-                </li>
-                <li>
-                  transfer the materials to another person or "mirror" the
-                  materials on any other server.
-                </li>
-              </ol>
+              Processing your personal information is in Robin Solanki
+              legitimate interests
             </li>
+            <li>Robin Solanki needs to comply with the law</li>
+          </ul>
+          <p>
+            Robin Solanki will retain your personal information only for as long
+            as is necessary for the purposes set out in this Privacy Policy. We
+            will retain and use your information to the extent necessary to
+            comply with our legal obligations, resolve disputes, and enforce our
+            policies.
+          </p>
+
+          <p>
+            If you are a resident of the European Economic Area (EEA), you have
+            certain data protection rights. If you wish to be informed what
+            Personal Information we hold about you and if you want it to be
+            removed from our systems, please contact us. Our Privacy Policy was
+            generated with the help of{" "}
+            <a href="https://www.gdprprivacypolicy.net/">
+              GDPR Privacy Policy Generator
+            </a>{" "}
+            and the{" "}
+            <a href="https://www.app-privacy-policy.com/app-privacy-policy-generator/">
+              App Privacy Policy Generator
+            </a>
+            .
+          </p>
+          <p>
+            In certain circumstances, you have the following data protection
+            rights:
+          </p>
+          <ul>
             <li>
-              This license shall automatically terminate if you violate any of
-              these restrictions and may be terminated by Robin Solanki at any
-              time. Upon terminating your viewing of these materials or upon the
-              termination of this license, you must destroy any downloaded
-              materials in your possession whether in electronic or printed
-              format.
+              The right to access, update or to delete the information we have
+              on you.
             </li>
-          </ol>
-          <h3>3. Disclaimer</h3>
-          <ol type="a">
-            <li>
-              The materials on Robin Solanki's website are provided on an 'as
-              is' basis. Robin Solanki makes no warranties, expressed or
-              implied, and hereby disclaims and negates all other warranties
-              including, without limitation, implied warranties or conditions of
-              merchantability, fitness for a particular purpose, or
-              non-infringement of intellectual property or other violation of
-              rights.
-            </li>
-            <li>
-              Further, Robin Solanki does not warrant or make any
-              representations concerning the accuracy, likely results, or
-              reliability of the use of the materials on its website or
-              otherwise relating to such materials or on any sites linked to
-              this site.
-            </li>
-          </ol>
-          <h3>4. Limitations</h3>
+            <li>The right of rectification.</li>
+            <li>The right to object.</li>
+            <li>The right of restriction.</li>
+            <li>The right to data portability</li>
+            <li>The right to withdraw consent</li>
+          </ul>
+          <h2>Log Files</h2>
+
           <p>
-            In no event shall Robin Solanki or its suppliers be liable for any
-            damages (including, without limitation, damages for loss of data or
-            profit, or due to business interruption) arising out of the use or
-            inability to use the materials on Robin Solanki's website, even if
-            Robin Solanki or a Robin Solanki authorized representative has been
-            notified orally or in writing of the possibility of such damage.
-            Because some jurisdictions do not allow limitations on implied
-            warranties, or limitations of liability for consequential or
-            incidental damages, these limitations may not apply to you.
+            Robin Solanki follows a standard procedure of using log files. These
+            files log visitors when they visit websites. All hosting companies
+            do this and a part of hosting services' analytics. The information
+            collected by log files include internet protocol (IP) addresses,
+            browser type, Internet Service Provider (ISP), date and time stamp,
+            referring/exit pages, and possibly the number of clicks. These are
+            not linked to any information that is personally identifiable. The
+            purpose of the information is for analyzing trends, administering
+            the site, tracking users' movement on the website, and gathering
+            demographic information.
           </p>
-          <h3>5. Accuracy of materials</h3>
+
           <p>
-            The materials appearing on Robin Solanki's website could include
-            technical, typographical, or photographic errors. Robin Solanki does
-            not warrant that any of the materials on its website are accurate,
-            complete or current. Robin Solanki may make changes to the materials
-            contained on its website at any time without notice. However Robin
-            Solanki does not make any commitment to update the materials.
+            Third-party ad servers or ad networks uses technologies like
+            cookies, JavaScript, or Web Beacons that are used in their
+            respective advertisements and links that appear on Robin Solanki,
+            which are sent directly to users' browser. They automatically
+            receive your IP address when this occurs. These technologies are
+            used to measure the effectiveness of their advertising campaigns
+            and/or to personalize the advertising content that you see on
+            websites that you visit.
           </p>
-          <h3>6. Links</h3>
+
           <p>
-            Robin Solanki has not reviewed all of the sites linked to its
-            website and is not responsible for the contents of any such linked
-            site. The inclusion of any link does not imply endorsement by Robin
-            Solanki of the site. Use of any such linked website is at the user's
-            own risk.
+            Note that Robin Solanki has no access to or control over these
+            cookies that are used by third-party advertisers.
           </p>
-          <h3>7. Modifications</h3>
+          <h2>Privacy Policies</h2>
+
           <p>
-            Robin Solanki may revise these terms of service for its website at
-            any time without notice. By using this website you are agreeing to
-            be bound by the then current version of these terms of service.
+            You may consult this list to find the Privacy Policy for each of the
+            advertising partners of Robin Solanki.
           </p>
-          <h3>8. Governing Law</h3>
+
           <p>
-            These terms and conditions are governed by and construed in
-            accordance with the laws of Maharashtra and you irrevocably submit
-            to the exclusive jurisdiction of the courts in that State or
-            location.
+            Third-party ad servers or ad networks uses technologies like
+            cookies, JavaScript, or Web Beacons that are used in their
+            respective advertisements and links that appear on Robin Solanki,
+            which are sent directly to users' browser. They automatically
+            receive your IP address when this occurs. These technologies are
+            used to measure the effectiveness of their advertising campaigns
+            and/or to personalize the advertising content that you see on
+            websites that you visit.
+          </p>
+
+          <p>
+            Note that Robin Solanki has no access to or control over these
+            cookies that are used by third-party advertisers.
+          </p>
+
+          <h2>Third Party Privacy Policies</h2>
+
+          <p>
+            Robin Solanki's Privacy Policy does not apply to other advertisers
+            or websites. Thus, we are advising you to consult the respective
+            Privacy Policies of these third-party ad servers for more detailed
+            information. It may include their practices and instructions about
+            how to opt-out of certain options.{" "}
+          </p>
+
+          <p>
+            You can choose to disable cookies through your individual browser
+            options. To know more detailed information about cookie management
+            with specific web browsers, it can be found at the browsers'
+            respective websites.
+          </p>
+
+          <h2>Children's Information</h2>
+
+          <p>
+            Another part of our priority is adding protection for children while
+            using the internet. We encourage parents and guardians to observe,
+            participate in, and/or monitor and guide their online activity.
+          </p>
+
+          <p>
+            Robin Solanki does not knowingly collect any Personal Identifiable
+            Information from children under the age of 13. If you think that
+            your child provided this kind of information on our website, we
+            strongly encourage you to contact us immediately and we will do our
+            best efforts to promptly remove such information from our records.
+          </p>
+
+          <h2>Online Privacy Policy Only</h2>
+
+          <p>
+            Our Privacy Policy created at GDPRPrivacyPolicy.net) applies only to
+            our online activities and is valid for visitors to our website with
+            regards to the information that they shared and/or collect in Robin
+            Solanki. This policy is not applicable to any information collected
+            offline or via channels other than this website.{" "}
+            <a href="https://gdprprivacypolicy.net">Our GDPR Privacy Policy</a>{" "}
+            was generated from the GDPR Privacy Policy Generator.
+          </p>
+
+          <h2>Consent</h2>
+
+          <p>
+            By using our website, you hereby consent to our Privacy Policy and
+            agree to its terms.
+          </p>
+
+          <h2>Third Party Privacy Policies</h2>
+
+          <p>
+            Robin Solanki's Privacy Policy does not apply to other advertisers
+            or websites. Thus, we are advising you to consult the respective
+            Privacy Policies of these third-party ad servers for more detailed
+            information. It may include their practices and instructions about
+            how to opt-out of certain options.{" "}
+          </p>
+
+          <p>
+            You can choose to disable cookies through your individual browser
+            options. To know more detailed information about cookie management
+            with specific web browsers, it can be found at the browsers'
+            respective websites.
+          </p>
+
+          <h2>Children's Information</h2>
+          <p>
+            Another part of our priority is adding protection for children while
+            using the internet. We encourage parents and guardians to observe,
+            participate in, and/or monitor and guide their online activity.
+          </p>
+
+          <p>
+            Robin Solanki does not knowingly collect any Personal Identifiable
+            Information from children under the age of 13. If you think that
+            your child provided this kind of information on our website, we
+            strongly encourage you to contact us immediately and we will do our
+            best efforts to promptly remove such information from our records.
+          </p>
+          <h2>Online Privacy Policy Only</h2>
+
+          <p>
+            Our Privacy Policy created at GDPRPrivacyPolicy.net) applies only to
+            our online activities and is valid for visitors to our website with
+            regards to the information that they shared and/or collect in Robin
+            Solanki. This policy is not applicable to any information collected
+            offline or via channels other than this website.{" "}
+            <a href="https://gdprprivacypolicy.net">Our GDPR Privacy Policy</a>{" "}
+            was generated from the GDPR Privacy Policy Generator.
+          </p>
+
+          <h2>Consent</h2>
+
+          <p>
+            By using our website, you hereby consent to our Privacy Policy and
+            agree to its terms.
           </p>
         </div>
       </main>
@@ -127,4 +239,4 @@ const TermsPage = () => {
   )
 }
 
-export default TermsPage
+export default PrivacyPolicyPage

@@ -1,5 +1,5 @@
 import React from "react"
-
+import { Link } from "gatsby"
 //Styles
 import { Wrapper } from "./ContactForm.styles"
 
@@ -18,7 +18,6 @@ const ContactForm = () => {
           <label htmlFor="bot">Don't fill this out, human</label>
           <input name="bot" id="bot" />
         </div>
-
         <label htmlFor="firstname"> First Name</label>
         <input
           required
@@ -27,7 +26,6 @@ const ContactForm = () => {
           name="firstname"
           placeholder="Your name.."
         />
-
         <label htmlFor="lastname"> Last Name</label>
         <input
           required
@@ -36,7 +34,6 @@ const ContactForm = () => {
           name="lastname"
           placeholder="Your last name.."
         />
-
         <label htmlFor="email"> Email</label>
         <input
           required
@@ -45,7 +42,6 @@ const ContactForm = () => {
           name="email"
           placeholder="Your email.."
         />
-
         <label htmlFor="message"> Message</label>
         <textarea
           required
@@ -53,7 +49,16 @@ const ContactForm = () => {
           name="message"
           placeholder="Your Message.."
         ></textarea>
-
+        <label htmlFor="consent"> Consent</label>
+        <input
+          type="checkbox"
+          className="checkmark"
+          name="terms"
+          value="accepted"
+          required
+        />
+        I agree to <Link to="/terms">Terms and Conditions</Link>
+        <br />
         <button className="button" type="submit">
           Submit
         </button>

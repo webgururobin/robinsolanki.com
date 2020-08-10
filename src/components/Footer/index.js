@@ -40,8 +40,7 @@ const Footer = () => {
 
       <Copyright>
         <p>
-          <Link to="/terms">Terms</Link> |{" "}
-          <Link to="/privacy-policy">Privacy Policy</Link>
+          <Link to="/terms">Terms and Privacy Policy</Link>
         </p>
         <p>
           {" "}

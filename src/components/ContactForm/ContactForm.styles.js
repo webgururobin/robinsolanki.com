@@ -56,4 +56,8 @@ export const Wrapper = styled.div`
   label {
     display: none;
   }
+
+  .checkmark {
+    margin-right: 1rem;
+  }
 `
