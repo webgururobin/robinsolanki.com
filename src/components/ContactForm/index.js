@@ -18,21 +18,13 @@ const ContactForm = () => {
           <label htmlFor="bot">Don't fill this out, human</label>
           <input name="bot" id="bot" />
         </div>
-        <label htmlFor="firstname"> First Name</label>
+        <label htmlFor="name"> Name</label>
         <input
           required
           type="text"
-          id="firstname"
-          name="firstname"
+          id="name"
+          name="name"
           placeholder="Your name.."
-        />
-        <label htmlFor="lastname"> Last Name</label>
-        <input
-          required
-          type="text"
-          id="lastname"
-          name="lastname"
-          placeholder="Your last name.."
         />
         <label htmlFor="email"> Email</label>
         <input
