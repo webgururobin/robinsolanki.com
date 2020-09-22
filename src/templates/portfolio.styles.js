@@ -9,7 +9,13 @@ export const PortfolioWrapper = styled.div`
 
     @media screen and (max-width: 767px) {
       object-fit: contain;
-      height: auto;
+      height: 25rem;
+      width: 100%;
+
+      picture > img {
+        object-fit: contain !important;
+        object-position: top !important;
+      }
     }
   }
 `

@@ -38,8 +38,16 @@ export const CardSingle = styled.div`
     object-position: top center;
 
     @media screen and (max-width: 767px) {
-      object-fit: contain;
-      height: auto;
+      width: 100%;
+      height: 25rem;
+      object-fit: cover;
+      object-position: top center;
+
+      picture > img {
+        object-fit: contain !important;
+        object-position: top;
+        height: auto !important;
+      }
     }
   }
 
@@ -47,10 +55,9 @@ export const CardSingle = styled.div`
     width: 100%;
     /* height: 60rem; */
 
-     div.gatsby-image-wrapper > picture > img {
-        object-fit: cover;
-        object-position: top !important;
-      }
+    div.gatsby-image-wrapper > picture > img {
+      object-fit: cover;
+      object-position: top !important;
     }
   }
 
