@@ -2,11 +2,13 @@ import React from "react"
 import { Link } from "gatsby"
 // Styles
 import { CardSingle } from "./Card.styles"
+import Img from "gatsby-image"
 
 const Card = ({ data, type, featured }) => {
   return (
     <CardSingle className={featured}>
-      <img src={data.image.fluid.src} alt={data.title} />
+      {/* <img src={data.image.fluid.src} alt={data.title} /> */}
+      <Img fluid={data.image.fluid} />
       <div>
         <strong>{type}</strong>
         <h2 className="card__title">

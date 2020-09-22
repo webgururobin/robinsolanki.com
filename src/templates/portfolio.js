@@ -7,6 +7,7 @@ import Seo from "../components/Seo"
 import Hero from "../components/Hero"
 
 import Star from "../images/star.svg"
+import Img from "gatsby-image"
 
 // Styles
 import { PortfolioWrapper, PortfolioDetails } from "./portfolio.styles"
@@ -37,10 +38,7 @@ const portfolioTemplate = ({ data }) => {
       <Hero title={data.contentfulPortfolio.title} />
       <main>
         <PortfolioWrapper>
-          <img
-            src={data.contentfulPortfolio.image.fluid.src}
-            alt={data.contentfulPortfolio.title}
-          />
+          <Img fluid={data.contentfulPortfolio.image.fluid} />
           <PortfolioDetails>
             <div>
               <h3>About</h3>

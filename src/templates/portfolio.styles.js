@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const PortfolioWrapper = styled.div`
-  img {
+  .gatsby-image-wrapper {
     height: 70rem;
     width: 100%;
     object-fit: cover;

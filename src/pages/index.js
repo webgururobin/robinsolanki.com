@@ -24,7 +24,7 @@ export const query = graphql`
           slug
           image {
             fluid(maxWidth: 1200, quality: 85) {
-              src
+              ...GatsbyContentfulFluid
             }
           }
           portfolioCategory {
@@ -63,6 +63,8 @@ export const query = graphql`
 const IndexPage = ({ data }) => {
   const featured = data.featured.edges[0].node
   const all = data.all
+
+  console.log(featured)
   return (
     <Layout>
       <Seo title="Full Stack Web Developer" />

@@ -31,7 +31,7 @@ export const CardSingle = styled.div`
     }
   }
 
-  img {
+  .gatsby-image-wrapper {
     width: 100%;
     height: 50rem;
     object-fit: cover;
@@ -40,6 +40,17 @@ export const CardSingle = styled.div`
     @media screen and (max-width: 767px) {
       object-fit: contain;
       height: auto;
+    }
+  }
+
+  &.featured {
+    width: 100%;
+    /* height: 60rem; */
+
+     div.gatsby-image-wrapper > picture > img {
+        object-fit: cover;
+        object-position: top !important;
+      }
     }
   }
 
