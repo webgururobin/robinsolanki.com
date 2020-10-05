@@ -14,24 +14,17 @@ import ModeContext from "../../context/ModeContext"
 
 // hooks
 import { useMetaDataQuery } from "../../hooks/useMetaDataQuery"
-import { motion } from "framer-motion"
 
 const Layout = ({ children }) => {
   const data = useMetaDataQuery()
   const { state } = useContext(ModeContext)
-  const variants = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1 },
-  }
 
   return (
     <ThemeProvider theme={state.isDark ? darkTheme : lightTheme}>
       <GlobalStyle />
       <Seo />
       <Header siteTitle={data.title} />
-      <motion.div initial="hidden" animate="visible" variants={variants}>
-        {children}
-      </motion.div>
+      <div>{children}</div>
       <Footer />
     </ThemeProvider>
   )

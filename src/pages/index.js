@@ -64,7 +64,6 @@ const IndexPage = ({ data }) => {
   const featured = data.featured.edges[0].node
   const all = data.all
 
-  console.log(featured)
   return (
     <Layout>
       <Seo title="Full Stack Web Developer" />
