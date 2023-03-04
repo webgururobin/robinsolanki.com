@@ -12,10 +12,18 @@ const Card = ({ data, type, featured }) => {
       <div>
         <strong>{type}</strong>
         <h2 className="card__title">
-          <Link to={`/portfolio/${data.slug}`}>{data.title}</Link>
+          <Link
+            to={
+              type === "portfolio"
+                ? `/portfolio/${data.slug}`
+                : `/blog/${data.slug}`
+            }
+          >
+            {data.title}
+          </Link>
         </h2>
         <ul>
-          {data.portfolioCategory.map(cat => (
+          {data.portfolioCategory?.map(cat => (
             <li key={cat.slug}>
               <Link to={`/portfolio-category/${cat.slug}`}>{cat.title}</Link>
             </li>

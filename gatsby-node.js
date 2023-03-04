@@ -19,6 +19,18 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           }
         }
 
+        posts: allContentfulPost(
+          filter: { node_locale: { eq: "en-US" } }
+          sort: { fields: createdAt, order: DESC }
+        ) {
+          edges {
+            node {
+              id
+              slug
+            }
+          }
+        }
+
         portfolioCategories: allContentfulPortfolioCategory(
           filter: { node_locale: { eq: "en-US" } }
           sort: { fields: createdAt, order: DESC }
@@ -38,12 +50,25 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   if (content.error) return
 
   const portfolioResult = content.data.portfolios.edges
+  const postResult = content.data.posts.edges
   const portfolioCategoriesResult = content.data.portfolioCategories.edges
 
   portfolioResult.forEach(({ node }) => {
     createPage({
       path: `portfolio/${node.slug}`,
       component: path.resolve(`src/templates/portfolio.js`), // Create Pages for each markdown file
+      // In your blog post template's graphql query, you can use pagePath
+      // as a GraphQL variable to query for data from the markdown file.
+      context: {
+        id: node.id,
+      },
+    })
+  })
+
+  postResult.forEach(({ node }) => {
+    createPage({
+      path: `blog/${node.slug}`,
+      component: path.resolve(`src/templates/post.js`), // Create Pages for each markdown file
       // In your blog post template's graphql query, you can use pagePath
       // as a GraphQL variable to query for data from the markdown file.
       context: {
